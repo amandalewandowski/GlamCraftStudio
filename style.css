@@ -1,0 +1,86 @@
+body{
+  background-color: burlywood;
+  color: sienna;
+  margin: 4rem;
+  font-family: "Raleway", sans-serif;
+}
+
+h1{
+  text-align: center;
+  animation: colora 3s ease-in-out infinite
+}
+
+/*Sparkles*/
+.sparkles {
+  cursor: url(https://abs.twimg.com/emoji/v2/72x72/2728.png) 36 36, auto;
+}
+
+/*mirror*/
+.mirror {
+  cursor: url(https://abs.twimg.com/emoji/v2/72x72/1fa9e.png) 36 36, auto;
+}
+
+/*makeup*/
+.makeup {
+  cursor: url(https://abs.twimg.com/emoji/v2/72x72/1f484.png) 36 36, auto;
+}
+
+section{
+  display: flex;
+}
+
+figure{
+  display:flex;
+  align-self: flex-start;
+  position: sticky;
+  top: 1rem;
+}
+
+img{
+  width: 900px;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+/*Color changing animation*/
+@keyframes colora {
+  0% {color:#B22222}
+20% {color: #DC143C}
+40% {color: #DC143C}
+60% {color: #F08080}
+80% {color: #E9967A}
+100% {color: #FFA07A}
+}
+
+button{
+  background-color:sienna;
+  color: black;
+  padding: 10px;
+  font-family: "Raleway";
+}
